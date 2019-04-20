@@ -349,7 +349,7 @@ class Utility
     public static function integer_input()
     {
         fscanf(STDIN, "%s\n", $num);
-        while ((Utility::check_Float($num)) || (!(is_numeric($num))) || ($num == 0)) {
+        while ((Utility::check_Float($num)) || (!(is_numeric($num))) ) {
             echo " Enter valid input ";
             $num = Utility::integer_input();
         }
